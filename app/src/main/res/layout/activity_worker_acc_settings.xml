@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_worker_acc_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cm.g2i.lalalaworker.ui.activities.WorkerAccSettingsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_wkrs_settings_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/small_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:id="@+id/activity_worker_settings_title"
+            android:text="@string/activity_worker_settings_title"
+            android:layout_marginBottom="@dimen/inter_view_margin"
+            android:textSize="@dimen/text_small"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/worker_infos_bg"
+            android:padding="@dimen/small_padding"
+            android:id="@+id/activity_worker_settings_rl"
+            android:layout_below="@id/activity_worker_settings_title">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_worker_settings_rl_renewal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_renewal_date_label"
+                    android:textSize="@dimen/text_small"
+                    android:text="@string/activity_worker_settings_renewal_date"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/account_renewal_date_label"
+                    android:id="@+id/account_renewal_date"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/inter_view_small_margin"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_worker_settings_rl_expiration"
+                android:layout_below="@id/activity_worker_settings_rl_renewal"
+                android:layout_marginTop="@dimen/inter_view_small_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_expiration_date_label"
+                    android:textSize="@dimen/text_small"
+                    android:text="@string/activity_worker_settings_expiration_date"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/account_expiration_date_label"
+                    android:id="@+id/account_expiration_date"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/inter_view_small_margin"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_worker_settings_rl_validity"
+                android:layout_below="@id/activity_worker_settings_rl_expiration"
+                android:layout_marginTop="@dimen/inter_view_small_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_validity_time_label"
+                    android:textSize="@dimen/text_small"
+                    android:text="@string/activity_worker_settings_validity_time"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/account_validity_time_label"
+                    android:id="@+id/account_validity_time"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/inter_view_small_margin"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_worker_settings_rl_remaining"
+                android:layout_below="@id/activity_worker_settings_rl_validity"
+                android:layout_marginTop="@dimen/inter_view_small_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_remaining_time_label"
+                    android:textSize="@dimen/text_small"
+                    android:text="@string/activity_worker_settings_remaining_time"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/account_remaining_time_label"
+                    android:id="@+id/account_remaining_time"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/inter_view_small_margin"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_worker_settings_renew_acc"
+            android:layout_alignParentRight="true"
+            android:theme="@style/MyRaisedButtons"
+            android:textColor="@color/white"
+            android:id="@+id/activity_worker_settings_reactivateacc"
+            android:layout_below="@id/activity_worker_settings_rl"
+            android:layout_marginTop="@dimen/inter_view_margin"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

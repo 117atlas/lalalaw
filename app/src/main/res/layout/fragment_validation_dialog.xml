@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cm.g2i.lalalaworker.ui.fragment.ValidationDialogFragment"
+    android:background="@drawable/validation_dialog_bg">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/inter_view_small_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_validation_dialog_message"
+            android:textStyle="normal"
+            android:textSize="@dimen/text_small"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="@string/validation_message_phone_regex"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_validation_dialog_cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="@color/white"
+            android:layout_below="@id/frag_validation_dialog_message"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/inter_view_margin"
+            android:textStyle="bold"
+            android:text="@string/frag_account_validation_dialog_cancel"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

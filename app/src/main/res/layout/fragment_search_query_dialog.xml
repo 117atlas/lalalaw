@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cm.g2i.lalalaworker.ui.fragment.SearchQueryDialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frag_search_query_dialog_ok">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_dialog_title"
+                android:textSize="22sp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/search_dialog_title"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_dialog_work"
+                android:textColorHint="@color/black"
+                android:id="@+id/til_search_dialog_work"
+                android:layout_below="@id/search_dialog_title">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_dialog_work"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/til_search_dialog_town"
+                android:hint="@string/search_dialog_town"
+                android:textColorHint="@color/black"
+                android:layout_below="@id/til_search_dialog_work">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_dialog_town"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/til_search_dialog_street"
+                android:hint="@string/search_dialog_street"
+                android:textColorHint="@color/black"
+                android:layout_below="@id/til_search_dialog_town">
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_dialog_street"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_dialog_ok"
+                android:text="@string/search_dialog_ok"
+                android:layout_below="@id/til_search_dialog_street"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="@color/colorAccent"
+                android:imeOptions="actionDone"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_dialog_cancel"
+                android:text="@string/search_dialog_cancel"
+                android:layout_toLeftOf="@id/search_dialog_ok"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/til_search_dialog_street"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_dialog_reset"
+                android:text="@string/search_dialog_reset"
+                android:layout_alignParentLeft="true"
+                android:theme="@style/MyRaisedButtons"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:textColor="@color/white"
+                android:layout_below="@id/til_search_dialog_street"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_search_query_dialog_loading"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/loading_layout" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comm_bg"
+    android:padding="@dimen/small_padding">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_history_list_cell__sms_"
+        android:src="@drawable/ic_textsms_black_24dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_history_list_cell_date"
+        android:layout_toLeftOf="@+id/user_history_list_cell__sms_"
+        android:text="15 Jui 2017 02:36"
+        android:textSize="@dimen/text_small"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"/>
+</RelativeLayout>

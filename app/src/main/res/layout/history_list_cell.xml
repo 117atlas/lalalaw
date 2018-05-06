@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comm_bg"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/m_small_padding">
+
+    <ImageView
+        android:layout_width="@dimen/profile_width_small"
+        android:layout_height="@dimen/profile_height_small"
+        android:src="@drawable/aam"
+        android:id="@+id/history_list_cell_profile"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/inter_view_margin"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/history_list_cell_profile"
+        android:id="@+id/history_list_cell_rl"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_list_cell_name"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/black"
+            android:text="Name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_list_cell_details"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_x_small"
+            android:text="2 appels 5 sms"
+            android:layout_below="@id/history_list_cell_name"
+            android:layout_marginTop="@dimen/inter_view_small_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_list_cell_lastdate"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_x_small"
+            android:text="Lun 15 Jui 2017 05:36"
+            android:layout_below="@id/history_list_cell_details"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_list_cell_ll"
+        android:layout_below="@id/history_list_cell_rl"
+        android:layout_alignLeft="@id/history_list_cell_rl"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_list_cell_phonecall"
+            android:text="@string/worker_vh_phonecall"
+            android:drawableLeft="@drawable/ic_call_black_18dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_weight=".5"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_list_cell_phonesms"
+            android:text="@string/worker_vh_phonesms"
+            android:drawableLeft="@drawable/ic_textsms_black_18dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

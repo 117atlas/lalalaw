@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/small_padding"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_signal_worker_ok">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_signal_worker_header"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            android:layout_centerHorizontal="true"
+            android:text="@string/frag_signal_worker_header"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_signal_worker_til"
+            android:layout_below="@id/frag_signal_worker_header"
+            android:layout_marginTop="@dimen/inter_view_small_margin"
+            android:padding="@dimen/small_padding"
+            android:background="@drawable/worker_infos_bg">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/frag_signal_worker_reason_hint"
+                android:id="@+id/frag_signal_worker_reason"
+                android:inputType="textMultiLine"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_signal_worker_submit"
+            android:layout_below="@id/frag_signal_worker_til"
+            android:layout_marginTop="@dimen/inter_view_small_margin"
+            android:layout_alignParentRight="true"
+            android:theme="@style/MyRaisedButtons"
+            android:textColor="@color/white"
+            android:text="@string/frag_signal_worker_signal_btn"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_signal_worker_cancel"
+            android:layout_below="@id/frag_signal_worker_til"
+            android:layout_marginTop="@dimen/inter_view_small_margin"
+            android:layout_toLeftOf="@id/frag_signal_worker_submit"
+            android:theme="@style/MyRaisedButtons"
+            android:textColor="@color/white"
+            android:text="@string/frag_signal_worker_signal_btn_cancel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reason_character_counter"
+            android:textSize="@dimen/text_x_small"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentLeft="true"
+            android:text="25/240"
+            android:layout_below="@id/frag_signal_worker_til"
+            android:layout_marginTop="@dimen/inter_view_small_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_signal_worker_rl_loading"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/loading_layout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

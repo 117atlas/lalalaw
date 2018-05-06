@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/inter_view_small_margin"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/inter_view_small_margin"
+        android:id="@+id/frag_account_no_account_message"
+        android:text="@string/frag_account_no_account_message"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_normal"
+        android:layout_marginBottom="@dimen/inter_view_margin"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/frag_account_no_account_message"
+        android:theme="@style/MyRaisedButtons"
+        android:textColor="@color/white"
+        android:text="@string/frag_account_create_worker_account"
+        android:id="@+id/frag_account_create_worker_account"/>
+
+</RelativeLayout>

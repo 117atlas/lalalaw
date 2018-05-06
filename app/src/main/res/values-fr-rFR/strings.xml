@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LaLaLaWorkers</string>
+    <string name="app_name__wversion">LaLaLaWorker V1.0.0</string>
+    <string name="app_account_worker_type">lalalaworker</string>
+
+    <string name="username">Sims Atlas</string>
+    <string name="lalalawplus">Trouvez un travailleur facilement</string>
+
+    <string name="connection_error_message">Impossible de se connecter au serveur\nS\'il vous plait verifiez votre connection Internet</string>
+    <string name="other_ioexception_message">Il s\'est produit un probleme de connection.</string>
+    <string name="btn_reload">Recommencer</string>
+    <string name="btn_cancel">Fermer</string>
+    <string name="connection_error_message_account">Impossible de se connecter au serveur\nImpossible de verifier votre compte\nS\'il vous plait verifiez votre connection Internet</string>
+    <string name="other_ioexception_message_account">Il est survenu un probleme de connection\nImpossible de verifier votre compte</string>
+    <string name="progress_dialog_message">Application des modifications...</string>
+    <string name="progress_dialog_message_wait">Patientez s\'il vous plait...</string>
+
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Avr</item>
+        <item>Mai</item>
+        <item>Jui</item>
+        <item>Jull</item>
+        <item>Aout</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Dim</item>
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Jeu</item>
+        <item>Ven</item>
+        <item>Sam</item>
+    </string-array>
+
+    <string name="call_label">Appels</string>
+    <string name="sms_label">SMS</string>
+
+    <!-- Navigation menu titles-->
+    <string name="nav_simple_profile">Profil Utilisateur</string>
+    <string name="nav_settings">Reglages</string>
+    <string name="nav_share_app">Partager l\'appli</string>
+    <string name="nav_report_problem">Signaler un probleme par rapport a l\'appli</string>
+    <string name="nav_help">Aide</string>
+    <string name="nav_about">A Propos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Tabs Titles -->
+    <string name="tab_history">Historique</string>
+    <string name="tab_search">Recherche</string>
+    <string name="tab_account">Compte</string>
+
+    <!-- Drawer ActionBarToggle-->
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!-- CloseApp Message -->
+    <string name="closeapp">Press again BACK for close App</string>
+
+    <!-- Main menu-->
+    <string name="main_menu_search">Recherche par criteres</string>
+
+    <!-- Search layout-->
+    <string name="search_options">Options de recherche</string>
+    <string name="search_filters">Filtres de recherche</string>
+
+    <!-- Search Dialog-->
+    <string name="search_dialog_title">Entrez vos parametres de recherche</string>
+    <string name="search_dialog_work">Travail</string>
+    <string name="search_dialog_town">Ville</string>
+    <string name="search_dialog_street">Quartier</string>
+    <string name="search_dialog_ok">Rechercher</string>
+    <string name="search_dialog_cancel">Fermer</string>
+    <string name="search_dialog_reset">Reset</string>
+
+    <!-- Sort Dialog-->
+    <string name="sort_dialog_title">Trier par</string>
+    <string name="sort_dialog_0">Rien</string>
+    <string name="sort_dialog_1">Notes</string>
+    <string name="sort_dialog_2">Nbre de Sollicitations</string>
+    <string name="sort_dialog_ok">Trier</string>
+    <string name="sort_dialog_cancel">Fermer</string>
+
+    <!-- Search Fragment-->
+    <string name="solis">Sollicitations</string>
+
+    <!-- Account Fragment-->
+    <string name="frag_account_note">Note</string>
+    <string name="frag_account_works">Mes travaux</string>
+    <string name="frag_account_comments">Mes commentaires</string>
+    <string name="frag_account_strikes">Mes avertissements</string>
+    <string name="frag_account_somenews">Quelques notifications</string>
+    <string name="frag_account_settings">Parametres du compte</string>
+    <string name="frag_account_modify">Modifier</string>
+    <string name="frag_account_phone">Telephone</string>
+    <string name="frag_account_nationality">Nationalite</string>
+    <string name="frag_account_town">Ville</string>
+    <string name="frag_account_street">Quartier</string>
+    <string name="frag_account_modify_passwd">Modifier votre mot de passe</string>
+
+    <!-- Worker Details-->
+    <string name="worker_vh_localisation">Habite</string>
+    <string name="worker_vh_nationality">Nationalite</string>
+    <string name="worker_vh_phonecall">Appeller</string>
+    <string name="worker_vh_phonesms">Envoyer SMS</string>
+    <string name="worker_vh_note">Noter</string>
+    <string name="comms_vh_comment">Commenter</string>
+    <string name="worker_infos_label">Informations personnelles</string>
+    <string name="worker_works_label">Travaux</string>
+    <string name="worker_comms_label">Quelques commentaires</string>
+    <string name="worker_activity_error_noting">Il s\'est produit une erreur lors de la soumission de la note</string>
+    <string name="worker_activity_error_inc_sollis">Il s\'est produit une erreur lors de l\'enregistrement de votre contact</string>
+    <string name="worker_activity_error_comment_note_signal">Vous ne pouvez pas ? si vous n\'avez pas contacte ce travailleur pendant ces 30 derniers jours.</string>
+    <string name="plus_note">Noter un travailleur</string>
+    <string name="plus_comment">Commenter un travailleur</string>
+    <string name="plus_signal">Signaler un travailleur</string>
+
+    <string name="strike_worker">Signaler un travailleur</string>
+    <string name="share_worker">Recommander ce travailleur a un ami</string>
+
+    <!-- History Activity-->
+    <string name="see_profile">Profil</string>
+    <string name="clear_history">Vider l\'historique</string>
+
+    <!-- Edit Activity-->
+    <string name="activity_edit_worker_infos_toolbar_title">Editer Infos Travailleur</string>
+    <string name="activity_edit_user_infos_toolbar_title">Editer Infos Utilisateur</string>
+    <string name="passwd_request_reason">S\'il vous plait, entrez votre mot de passe pour appliquer les modifications.</string>
+    <string name="activity_edit_worker_infos_apply">Appliquer</string>
+    <string name="passwd_hint">Entrez votre mot de passe</string>
+    <string name="activity_edit_worker_infos_phone_hint">Telephone</string>
+    <string name="activity_edit_worker_infos_nationality_hint">Nationalite</string>
+    <string name="activity_edit_worker_infos_town_hint">Ville</string>
+    <string name="activity_edit_worker_infos_street_hint">Quartier</string>
+    <string name="edit_success">Vos modifications ont ete appliquees avec succes.</string>
+
+    <!-- Change Passwd Activity-->
+    <string name="activity_change_passwd_toolbar_title">Changer le mot de passe</string>
+    <string name="activity_change_passwd_old">Ancien mot de passe</string>
+    <string name="activity_change_passwd_new">Nouveau mot de passe</string>
+    <string name="activity_change_passwd_confirm">Confirmer nouveau not de passe</string>
+    <string name="activity_change_passwd_apply">Appliquer</string>
+    <string name="wrong_old_passwd">S\'il vous plait, entrez votre mot de passe.</string>
+
+    <!-- Register User Activity-->
+    <string name="activity_register_user_name_hint">S\'il vous plait, entrez votre nom</string>
+    <string name="activity_register_user_continue">Continuer</string>
+    <string name="activity_register_user_welcome">Bienvenue sur LaLaLaWorker</string>
+    <string name="activity_register_user_name_validator">S\'il vous plait, entrez votre nom</string>
+
+    <!-- Activity Simple Account-->
+    <string name="activity_simple_account_index">Informations du compte utilisateur</string>
+    <string name="activity_simple_account_modify">Modifier</string>
+    <string name="activity_simple_account_name_label">Nom</string>
+    <string name="activity_simple_account_town_label">Ville</string>
+    <string name="activity_simple_account_street_label">Quartier</string>
+
+    <!-- Activity modify user infos-->
+    <string name="activity_edit_user_infos_apply">Appliquer</string>
+    <string name="activity_edit_user_infos_title_name">Modifier le nom</string>
+    <string name="activity_edit_user_infos_title_localisation">Modifier ma localisation geographique</string>
+
+    <!-- Activity Worker Works-->
+    <string name="activity_worker_works_btn_add_work">Ajouter un travail</string>
+    <string name="worker_works_full_list_vh_delete_work">Retirer</string>
+    <string name="activity_worker_works_toolbar_title">Mes competences</string>
+
+    <!-- Activity add Work-->
+    <string name="activity_add_work_add_btn">Ajouter</string>
+    <string name="activity_add_work_toolbar_title">Ajouter une competence</string>
+
+    <!-- Register Worker Activity-->
+    <string name="activity_register_worker_label">Creer mon compte travailleur</string>
+    <string name="activity_registry_worker_step1">Etape 1\nInformations personnelles</string>
+    <string name="activity_registry_worker_step1_text">Informations personnelles</string>
+    <string name="activity_register_worker_phone_label">Numéro de telephone</string>
+    <string name="activity_register_worker_nationality_label">Nationalité</string>
+    <string name="activity_register_worker_town_label">Ville</string>
+    <string name="activity_register_worker_street_label">Quartier</string>
+    <string name="activity_register_worker_passwd_label">Mot de passe</string>
+    <string name="activity_register_worker_confirmpasswd_label">Confirmer le mot de passe</string>
+    <string name="activity_register_worker_accept_conditions_text">J\'ai lu et j\'accepte </string>
+    <string name="activity_register_worker_conditions_link">les conditions d\'utilisation</string>
+    <string name="activity_register_worker_continue">Creer un compte</string>
+
+    <!-- Add Works Register Activity-->
+    <string name="activity_add_work_register_label">Votre compte a été créé avec succes</string>
+    <string name="activity_add_work_register_step2">Etape 2\nAjoutez vos competences</string>
+    <string name="activity_add_work_register_add_work">Ajouter</string>
+    <string name="activity_add_work_register_continue_ignore">Ignorer</string>
+    <string name="activity_add_work_register_continue_">Continuer</string>
+    <string name="activity_add_work_register_work_to_add">Entrez une competence/travail</string>
+    <string name="no_work_validation_message">Veillez entrer une competence/travail</string>
+    <string name="has_already_this_work_validation_msg">Vous vous etes deja attribué cette competence</string>
+
+    <!-- Frag Acccount no Account-->
+    <string name="frag_account_no_account_message">Vous n\'avez pas de compte travailleur</string>
+    <string name="frag_account_create_worker_account">Creer un compte travailleur</string>
+
+    <!-- Frag Validation Dialog-->
+    <string name="frag_account_validation_dialog_cancel">Fermer</string>
+    <string name="validation_message_phone">S\'il vous plait, entrez votre numero de telephone</string>
+    <string name="validation_message_phone_regex">Votre numero de telephone ne correspond pas aux numeros de telephone du Cameroun</string>
+    <string name="validation_message_nationality">S\'il vous plait, entrez votre nationalite</string>
+    <string name="validation_message_town">S\'il vous plait, entrez votre ville</string>
+    <string name="validation_message_street">S\'il vous plait, entrez votre quartier</string>
+    <string name="validation_message_passwd">S\'il vous plait, entrez un mot de passe</string>
+    <string name="validation_message_confirm_passwd">Veillez confirmer votre mot de passe</string>
+    <string name="validation_message_license_accept">Vous ne pouvez pas creer un compte si vous n\'acceptez pas les conditions d\'utilisation</string>
+
+    <!-- Signal Worker-->
+    <string name="frag_signal_worker_header">Pourquoi voulez vous signaler ce travailleur?</string>
+    <string name="frag_signal_worker_reason_hint">Entrez la raison</string>
+    <string name="frag_signal_worker_signal_btn">Soumettre</string>
+    <string name="frag_signal_worker_signal_btn_cancel">Fermer</string>
+    <string name="signal_worker_feedback">Votre signalement a été soumis avec succes</string>
+
+    <!-- Empty list messages-->
+    <string name="empty_list_worker">Aucun travailleur ne correspond a vos criteres de recherche</string>
+    <string name="empty_list_comms">Ce travailleur n\'a aucun commentaire</string>
+    <string name="empty_list_workerscomms">Vous n\'avez aucun commentaire</string>
+    <string name="empty_list_works">Ce travailleur n\'a pas de competences</string>
+    <string name="empty_list_workersworks">Vous n\'avez aucune competence</string>
+
+    <!-- Photo CHooser-->
+    <string name="profile_img_chooser_gallery">De la gallerie</string>
+    <string name="profile_img_chooser_appphoto">Prendre une photo</string>
+    <string name="profile_img_chooser_gallery_title">Changez votre photo de profil</string>
+
+    <!-- Activity Settings-->
+    <string name="activity_settings_user_settings_title">Parametres utilisateurs</string>
+    <string name="activity_settings_number_searched_wkrs">Nombres max de travailleur a afficher</string>
+    <string-array name="numbers_searched_wrks">
+        <item>30</item>
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+    </string-array>
+    <string name="activity_settings_save_histories">Enregistrer les travailleurs sollicités</string>
+    <string name="activity_settings_consider_user_locals">Mettre en avant les workers qui sont dans la meme localite que moi</string>
+    <string name="activity_settings_general_settings_title">Parametres generaux</string>
+    <string name="activity_settings_server_add_label">Adresse du serveur</string>
+    <string name="activity_settings_police_size_label">Taille de la police</string>
+    <string-array name="police_sizes">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Big</item>
+    </string-array>
+    <string name="activity_settings_notifications_label">Activatee les notifications</string>
+    <string name="activity_settings_anonymous_signal_label">Rester anonyme lors des signalements</string>
+    <string name="activity_settings_sms_template_label">Modeles de SMS</string>
+    <string name="set_settings_feedback_pos">Vos parametres ont été enregistrés avec succes!!!</string>
+    <string name="set_settings_feedback_neg">Il est survenu un probleme lors de l\'enregistrement de vos parametres</string>
+
+    <!-- Frag Modify Server Add-->
+    <string name="enter_server_add">Enter server address</string>
+    <string name="server_add_label">Server add</string>
+    <string name="frag_modify_server_add_ok">Apply</string>
+    <string name="frag_modify_server_add_cancel">Cancel</string>
+
+    <!-- Frag Modify SMS Template-->
+    <string name="frag_modify_sms_template_header">Choisissez votre modele de SMS</string>
+    <string name="frag_modify_sms_template_next">Suivant</string>
+    <string name="frag_modify_sms_template_previous">Precedent</string>
+    <string name="frag_modify_sms_template_ok">Appliquer</string>
+    <string name="frag_modify_sms_template_cancel">Fermer</string>
+    <string-array name="sms_template_titles">
+        <item>Modele 1</item>
+        <item>Modele 2</item>
+        <item>Modele 3</item>
+        <item>Pas de modele</item>
+    </string-array>
+    <string-array name="sms_templates">
+        <item>
+            Un commentaire est un texte dans un programme, non pris en compte lors de l\'exécution de ce dernier. Ils sont très utiles en
+            programmation puisqu\'ils vous permettent de vous y retrouver dans votre code. Imaginez que vous créiez une application et que,
+            quelques mois ou même quelques années plus tard, vous décidiez de la mettre à jour.
+        </item>
+        <item>
+            Les pointeurs sont généralement redoutés comme la peste par les programmeurs débutants. Pourtant, ils rendent de grands
+            services et vous devez absolument comprendre leur fonctionnement pour bien programmer en Objective-C. Pour l\'instant, retenez
+            leur principal intérêt : ils facilitent la manipulation des objets en Objective-C
+        </item>
+        <item>
+            Les opérateurs de comparaison (dits logiques) sont très importants. Ils permettent de comparer des valeurs entre elles. Par leur
+            intermédiaire, vous pourrez savoir qui de Pierre ou de Jean est le plus grand, ou encore si les prunes sont plus chères au kilo que
+            les bananes. J\'ai regroupé tous les opérateurs logiques dans le tableau suivant.
+        </item>
+        <item>
+            Pas de modele
+        </item>
+    </string-array>
+
+
+    <!-- Activity About-->
+    <string name="activity_about_title">A propos</string>
+    <string name="activity_about_facebook">Likez notre page Facebook</string>
+    <string name="activity_about_twitter">Suivez nous sur Twitter</string>
+    <string name="activity_about_gmail">Contactez nous : lalalawg2i@gmail.com</string>
+    <string name="activity_about_website">Visitez notre site web : g2i.com/lalalaw</string>
+    <string name="activity_about_license">Licence</string>
+    <string name="activity_about_copyright">Copyright G2i 2017 Tous droits reservés</string>
+
+    <!--Activity Strikes -->
+    <string name="activity_strike_gravity_label">Gravité</string>
+    <string name="activity_strike_gravity_details">Details</string>
+    <string name="activity_strike_gravity_level_label">Niveau de gravité</string>
+    <string name="activity_strike_gravity_message_label">Message</string>
+
+    <!-- News Messages-->
+    <string name="news_message_for_comment"> a posté un commentaire sur vous.</string>
+    <string name="news_message_for_note"> vous a noté. Il/Elle vous a attribué la note de </string>
+    <string name="news_message_for_signal"> vous a signalé. Il/Elle a dit: </string>
+    <string name="news_message_for_strike_lvl">Votre niveau d\'avertissement est de ??1 and la gravité est de ??2 .</string>
+    <string name="news_message_for_account_expiration">Votre compte travailleur expire le ??</string>
+
+    <!-- GCM-->
+    <string name="gcm_defaultSenderId">356638137163</string>
+    <string name="gcm_sendTokenSuccess">Succes envoi Token</string>
+    <string name="gcm_sendTokenError">Erreur envoi token</string>
+    <string name="googleplay_error">Veillez installer Google play pour le bon fonctionnement de l\'application</string>
+
+    <!-- Activity Worker Account Settings-->
+    <string name="activity_worker_settings_renewal_date">Date renouvellement du compte</string>
+    <string name="activity_worker_settings_expiration_date">Date Expiration du compte</string>
+    <string name="activity_worker_settings_validity_time">Durée de validité du compte</string>
+    <string name="activity_worker_settings_remaining_time">Durée restante</string>
+    <string name="activity_worker_settings_renew_acc">Reactiver mon compte</string>
+    <string name="activity_worker_settings_title">Paramètres Compte Travailleur</string>
+    <string name="month_label">Mois</string>
+    <string name="year_label">Années</string>
+
+    <!-- Frag Report problem-->
+    <string name="frag_report_problem_title">Signaler un problème sur l\'application</string>
+    <string name="frag_report_problem_usrname">Votre nom</string>
+    <string name="frag_report_problem_usrproblem">Le problème</string>
+    <string name="frag_report_problem_report">Signaler</string>
+    <string name="frag_report_problem_cancel">Fermer</string>
+    <string name="frag_report_problem_success">Votre problème a été signalé avec succès!</string>
+    <string name="frag_report_problem_error">Il est survenu un problème lors du signalement! Réessayer plus tard.</string>
+
+    <!-- Frag Reactivate Account-->
+    <string name="frag_reactivate_acc_whattodofor">
+        If you want to reactivate or prolonge your worker account, go to an Express Union Mobile Money point
+        and do a money transfert to LaLaLaWorkers Account following this points:\n
+            \t 250 FCFA ---> 3 months\n
+            \t 500 FCFA ---> 5 months\n
+            \t 1000 FCFA ---> 1 year\n
+            \t 1500 FCFA ---> 18 months\n
+            \t 1700 FCFA ---> 2 years\n
+        After do that click on the button ASK FOR REACTIVATION/ASK FOR EXTENSION and wait for reactivation/extension. The reactivation/extension
+        of your account can take between 5 minutes and 24 hours.
+    </string>
+    <string name="frag_reactivate_acc_reac">ASK FOR REACTIVATION</string>
+    <string name="frag_reactivate_acc_ext">ASK FOR EXTENSION</string>
+    <string name="frag_reactivate_acc_cancel">Cancel</string>
+    <string name="frag_reactivate_acc_success">Your request has been successfully sent!</string>
+    <string name="frag_reactivate_acc_error">There was a problem when sending your request! Try again Later.</string>
+
+    <!-- Extras -->
+    <string name="share_app_message">LaLaLaWorkers is a great application which help you to find easily a worker for a little job or to find a
+    little job.\n Go download it at https://play.google.com/store/apps/details?id=g2i.lalalaw or www.g2i.com/lalalaw/download. </string>
+    <string name="share_worker_message">I recommend you this person: ????, for many works such as ???.\n I found this worker on the application LaLaLaWorkers
+    that you can download at https://play.google.com/store/apps/details?id=g2i.lalalaw or www.g2i.com/lalalaw/download. </string>
+</resources>

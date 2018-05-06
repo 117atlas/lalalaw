@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cm.g2i.lalalaworker">
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <service
+        android:name=".controllers.appauthenticator.LaLaLaAuthService"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.accounts.AccountAuthenticator" />
+        </intent-filter>
+
+        <meta-data
+            android:name="android.accounts.AccountAuthenticator"
+            android:resource="@xml/authenticator" /> <!-- We haven't defined this -->
+    </service>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/lalalalogonew3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyStyle">
+        <activity android:name=".ui.activities.MainActivity" />
+        <activity android:name=".ui.activities.SimpleAcountActivity" />
+        <activity android:name=".ui.activities.SettingsActivity" />
+        <activity android:name=".ui.activities.HelpActivity" />
+        <activity android:name=".ui.activities.AboutActivity" />
+        <activity android:name=".ui.activities.WorkerActivity" />
+        <activity android:name=".ui.activities.CommentsActivity" />
+        <activity android:name=".ui.activities.HistoryActivity" />
+        <activity android:name=".ui.activities.EditWorkerInfosActivity" />
+        <activity android:name=".ui.activities.ChangePasswdActivity" />
+        <activity
+            android:name=".ui.activities.RegisterUserActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".controllers.appauthenticator.LaLaLaAuthService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" /> <!-- We haven't defined this -->
+        </service>
+
+        <activity android:name=".ui.activities.EditUserInfosActivity" />
+        <activity android:name=".ui.activities.WorkerWorksActivity" />
+        <activity android:name=".ui.activities.AddWorkActivity" />
+        <activity
+            android:name=".ui.activities.RegisterWorkerActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".ui.activities.AddWorkRegisterActivity"
+            android:noHistory="true" />
+        <activity android:name=".ui.activities.StrikesActivity" />
+        <activity android:name=".ui.activities.NewsActivity" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.androidpourtous.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".controllers.gcm.LaLaLaGCMListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".controllers.gcm.LaLaLaInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".controllers.gcm.RegistrationIntentService"
+            android:exported="false"></service>
+
+        <activity android:name=".ui.activities.WorkerAccSettingsActivity"></activity>
+    </application>
+
+</manifest>

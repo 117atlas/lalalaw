@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/loading_layout_rl_loading"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loading_layout_progress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text="@string/connection_error_message"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/black"
+        android:layout_below="@id/loading_layout_progress"
+        android:layout_marginTop="@dimen/inter_view_margin"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/loading_layout_error_message"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading_layout_reload"
+        android:text="@string/btn_reload"
+        android:textColor="@color/white"
+        android:theme="@style/MyRaisedButtons"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loading_layout_error_message"
+        android:layout_marginTop="@dimen/inter_view_margin"/>
+
+</RelativeLayout>

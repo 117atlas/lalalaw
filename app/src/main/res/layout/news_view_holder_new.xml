@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comm_bg"
+    android:padding="@dimen/small_padding"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_vh_newicon_bloc"
+        android:padding="@dimen/small_padding"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber_new_white_36dp"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/news_vh_newicon_bloc"
+        android:layout_marginRight="@dimen/inter_view_small_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_vh_message"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/black"
+            android:text="hsgdjsgjhajdsggdjsagdhjsgajdjsagdgajhsgdjgsahjdgjsagdjhgsahjdgkasgdgsjadgksahgkjh"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

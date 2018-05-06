@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comm_bg"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comms_vh_name"
+        android:text="Name"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comms_vh_date"
+        android:text="Date"
+        android:textSize="@dimen/text_x_small"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comms_vh_comm"
+        android:layout_below="@id/comms_vh_name"
+        android:layout_marginTop="5dp"
+        android:text="Analyse non constructive\nGibsy"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

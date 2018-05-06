@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="cm.g2i.lalalaworker.ui.fragment.ModifyServerAddFragment"
+    android:background="@color/background"
+    android:padding="@dimen/small_padding">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_modify_server_add_header"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
+        android:text="@string/enter_server_add"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_modify_server_add_til"
+        android:hint="@string/server_add_label"
+        android:layout_below="@id/frag_modify_server_add_header"
+        android:layout_marginTop="@dimen/inter_view_small_margin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_modify_server_add_server_add"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_modify_server_add_ok"
+        android:theme="@style/MyRaisedButtons"
+        android:textColor="@color/white"
+        android:layout_below="@id/frag_modify_server_add_til"
+        android:layout_alignParentRight="true"
+        android:id="@+id/frag_modify_server_add_ok"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_modify_server_add_cancel"
+        android:theme="@style/MyRaisedButtons"
+        android:textColor="@color/white"
+        android:layout_alignTop="@id/frag_modify_server_add_ok"
+        android:layout_toLeftOf="@id/frag_modify_server_add_ok"
+        android:id="@+id/frag_modify_server_add_cancel"/>
+
+
+
+
+</RelativeLayout>

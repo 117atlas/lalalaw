@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="@dimen/worker_details_padding_in">
+
+    <ImageView
+        android:layout_width="@dimen/profile_width"
+        android:layout_height="@dimen/profile_height"
+        android:id="@+id/worker_vh_profile"
+        android:src="@drawable/aam"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_name"
+        android:text="Name"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@id/worker_vh_profile"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_localisation_label"
+        android:text="@string/worker_vh_localisation"
+        android:layout_below="@id/worker_vh_name"
+        android:layout_toRightOf="@id/worker_vh_profile"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/worker_vh_profile"
+        android:layout_below="@id/worker_vh_localisation_label"
+        android:id="@+id/worker_vh_localisation"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Test"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_nationality_label"
+        android:text="@string/worker_vh_nationality"
+        android:layout_toRightOf="@id/worker_vh_profile"
+        android:layout_below="@id/worker_vh_localisation"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_nationality"
+        android:layout_toRightOf="@id/worker_vh_profile"
+        android:layout_below="@id/worker_vh_nationality_label"
+        android:textSize="20sp"
+        android:text="Test"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"/>
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_note"
+        android:layout_below="@id/worker_vh_profile"
+        android:layout_alignParentLeft="true"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="3.5"
+        android:clickable="false"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_notetext"
+        android:text="2.5/5"
+        android:textSize="@dimen/text_small"
+        android:layout_below="@id/worker_vh_note"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_soll"
+        android:text="17 sollicitations"
+        android:textSize="@dimen/text_x_small"
+        android:layout_below="@id/worker_vh_notetext"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/worker_vh_phone"
+        android:text="Phone"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/worker_vh_soll"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/worker_vh_nationality"
+        android:layout_below="@id/worker_vh_nationality"
+        android:id="@+id/worker_vh_ll"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/worker_vh_phonecall"
+            android:id="@+id/worker_vh_phonecall"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_weight=".33"
+            android:drawableTop="@drawable/ic_call_black_48dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worker_vh_phonesms"
+            android:id="@+id/worker_vh_phonesms"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_weight=".33"
+            android:drawableTop="@drawable/ic_textsms_black_48dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/worker_vh_note"
+            android:id="@+id/worker_vh_tonote"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:drawableTop="@drawable/ic_grade_black_48dp"
+            android:layout_weight=".34"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

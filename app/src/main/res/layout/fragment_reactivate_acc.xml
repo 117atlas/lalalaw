@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="cm.g2i.lalalaworker.ui.fragment.ReactivateAccFragment"
+    android:padding="@dimen/small_padding"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_reactivate_acc_whattodofor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
+        android:text="@string/frag_reactivate_acc_whattodofor"
+        android:padding="@dimen/small_padding"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_reactivate_acc_btnok"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/frag_reactivate_acc_reac"
+        android:layout_below="@id/frag_reactivate_acc_whattodofor"
+        android:layout_marginTop="@dimen/inter_view_margin"
+        android:layout_alignParentRight="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_reactivate_acc_cancel"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/frag_reactivate_acc_cancel"
+        android:layout_below="@id/frag_reactivate_acc_whattodofor"
+        android:layout_marginTop="@dimen/inter_view_margin"
+        android:layout_toLeftOf="@id/frag_reactivate_acc_btnok"
+        android:layout_marginRight="@dimen/inter_view_small_margin"/>
+
+
+</RelativeLayout>

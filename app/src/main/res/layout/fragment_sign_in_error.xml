@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/loading_layout_rl_loading"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text="@string/connection_error_message"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/inter_view_margin"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/frag_sign_in_error_message"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_sign_in_error_message"
+        android:layout_marginTop="@dimen/inter_view_margin"
+        android:layout_centerHorizontal="true">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_sign_in_error_cancel"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white"
+            android:theme="@style/MyRaisedButtons" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_sign_in_error_retry"
+            android:text="@string/btn_reload"
+            android:textColor="@color/white"
+            android:theme="@style/MyRaisedButtons"
+            android:layout_toRightOf="@id/frag_sign_in_error_cancel"
+            android:layout_marginLeft="@dimen/inter_view_margin"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

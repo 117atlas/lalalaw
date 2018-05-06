@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/activity_history_appbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_activity_history"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_history_appbar"
+        android:paddingTop="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+        tools:context="cm.g2i.lalalaworker.ui.activities.HistoryActivity"
+        android:background="@color/background">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_history_worker_infos_cardview"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/cardview_default_radius">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/m_small_padding"
+                android:id="@+id/activity_history_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/profile_width_small"
+                    android:layout_height="@dimen/profile_height_small"
+                    android:id="@+id/activity_history_profile"
+                    android:src="@drawable/aam"
+                    android:layout_marginRight="@dimen/inter_view_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_history_name"
+                    android:text="Name"
+                    android:textSize="@dimen/text_normal"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/activity_history_profile"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/activity_history_name"
+                    android:layout_alignLeft="@id/activity_history_name"
+                    android:layout_marginTop="@dimen/inter_view_small_margin">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_history_phonecall"
+                        android:drawableLeft="@drawable/ic_call_black_18dp"
+                        android:text="@string/worker_vh_phonecall"
+                        android:textSize="@dimen/text_xx_small"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_weight="0.33"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_history_phonesms"
+                        android:drawableLeft="@drawable/ic_textsms_black_18dp"
+                        android:text="@string/worker_vh_phonesms"
+                        android:textSize="@dimen/text_xx_small"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_weight="0.33"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/activity_history_seeprofile"
+                        android:drawableLeft="@drawable/ic_account_circle_black_18dp"
+                        android:text="@string/see_profile"
+                        android:textSize="@dimen/text_xx_small"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_weight="0.33"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_history_history_cardview"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            android:layout_below="@id/activity_history_worker_infos_cardview"
+            android:layout_marginTop="@dimen/inter_view_margin">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/small_padding"
+                android:id="@+id/activity_history_history"
+                android:layout_marginBottom="@dimen/inter_view_margin">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

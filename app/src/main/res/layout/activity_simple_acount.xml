@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple_acount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/zero"
+    android:paddingLeft="@dimen/zero"
+    android:paddingRight="@dimen/zero"
+    android:paddingTop="@dimen/zero"
+    tools:context="cm.g2i.lalalaworker.ui.activities.SimpleAcountActivity">
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/activity_simple_acount_appbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_simple_account_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_simple_acount_appbar"
+        android:padding="@dimen/small_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_simple_acount_index"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/inter_view_small_margin"
+            android:layout_marginBottom="@dimen/inter_view_margin"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/black"
+            android:text="@string/activity_simple_account_index"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_border"
+            android:padding="5dp"
+            android:id="@+id/activity_simple_acount_ll"
+            android:layout_below="@id/activity_simple_acount_index"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_simple_account_modify"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableLeft="@drawable/ic_mode_edit_black_18dp"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/activity_simple_acount_edit_name"
+                    android:layout_alignParentRight="true"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_simple_acount_name_label"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/activity_simple_account_name_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_marginRight="@dimen/inter_view_small_margin"
+                    android:layout_alignBaseline="@id/activity_simple_acount_edit_name"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_simple_acount_name"
+                    android:textColor="@color/black"
+                    android:layout_alignBaseline="@id/activity_simple_acount_edit_name"
+                    android:layout_toLeftOf="@id/activity_simple_acount_edit_name"
+                    android:layout_toRightOf="@id/activity_simple_acount_name_label"
+                    android:textSize="@dimen/text_small"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_simple_account_modify"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableLeft="@drawable/ic_mode_edit_black_18dp"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/activity_simple_acount_edit_town"
+                    android:layout_alignParentRight="true"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_simple_acount_town_label"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/activity_simple_account_town_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_marginRight="@dimen/inter_view_small_margin"
+                    android:layout_alignBaseline="@id/activity_simple_acount_edit_town"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_simple_acount_town"
+                    android:textColor="@color/black"
+                    android:layout_alignBaseline="@id/activity_simple_acount_edit_town"
+                    android:layout_toLeftOf="@id/activity_simple_acount_edit_town"
+                    android:layout_toRightOf="@id/activity_simple_acount_town_label"
+                    android:textSize="@dimen/text_small"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_simple_account_modify"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:drawableLeft="@drawable/ic_mode_edit_black_18dp"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:id="@+id/activity_simple_acount_edit_street"
+                    android:layout_alignParentRight="true"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_simple_acount_street_label"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/activity_simple_account_street_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_marginRight="@dimen/inter_view_small_margin"
+                    android:layout_alignBaseline="@id/activity_simple_acount_edit_street"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_simple_acount_street"
+                    android:textColor="@color/black"
+                    android:layout_alignBaseline="@id/activity_simple_acount_edit_street"
+                    android:layout_toLeftOf="@id/activity_simple_acount_edit_street"
+                    android:layout_toRightOf="@id/activity_simple_acount_street_label"
+                    android:textSize="@dimen/text_small"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

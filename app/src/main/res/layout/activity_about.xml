@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/zero"
+    android:paddingLeft="@dimen/zero"
+    android:paddingRight="@dimen/zero"
+    android:paddingTop="@dimen/zero"
+    tools:context="cm.g2i.lalalaworker.ui.activities.AboutActivity">
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_about_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inter_view_big_margin"
+            android:layout_marginRight="@dimen/inter_view_big_margin"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/profile_height_big"
+                android:layout_height="@dimen/profile_width_big"
+                android:id="@+id/activity_about_logo"
+                android:src="@drawable/lalalalogo"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_about_appname"
+                android:text="@string/app_name__wversion"
+                android:textSize="@dimen/text_normal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/small_padding"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/activity_about_logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_about_appname"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:background="@drawable/worker_infos_bg_inverted"
+                android:orientation="vertical"
+                android:id="@+id/activity_about_ll">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_about_facebook"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:text="@string/activity_about_facebook"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/icons8_facebook_27"
+                    android:drawablePadding="@dimen/small_padding"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_about_twitter"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:text="@string/activity_about_twitter"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/icons8_twitter_27"
+                    android:drawablePadding="@dimen/small_padding"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_about_mail"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:text="@string/activity_about_gmail"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/icons8_gmail_27"
+                    android:drawablePadding="@dimen/small_padding"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_about_website"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:text="@string/activity_about_website"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/icons8_internet_27"
+                    android:drawablePadding="@dimen/small_padding"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_about_license"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:text="@string/activity_about_license"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/inter_view_margin"
+                android:layout_below="@id/activity_about_ll" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_about_license"
+                android:padding="@dimen/small_padding"
+                android:layout_marginTop="@dimen/inter_view_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_x_small"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/white"
+                    android:text="@string/activity_about_copyright"
+                    android:textStyle="italic"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

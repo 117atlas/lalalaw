@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cm.g2i.lalalaworker.ui.fragment.SetSMSTemplateFragment"
+    android:background="@color/background"
+    android:padding="@dimen/small_padding">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_set_sms_template_header"
+        android:textColor="@color/black"
+        android:text="@string/frag_modify_sms_template_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/small_padding"
+        android:textSize="@dimen/text_small"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_modify_sms_template_rl1"
+        android:layout_below="@id/frag_set_sms_template_header"
+        android:layout_marginTop="@dimen/inter_view_small_margin">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_modify_sms_template_previous"
+            android:text="@string/frag_modify_sms_template_previous"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_alignParentLeft="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_modify_sms_template_next"
+            android:text="@string/frag_modify_sms_template_next"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/frag_modify_sms_template_previous"
+            android:layout_toLeftOf="@id/frag_modify_sms_template_next"
+            android:text="Template 1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            android:layout_alignBaseline="@id/frag_modify_sms_template_previous"
+            android:id="@+id/frag_modify_sms_template_title"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/inter_view_small_margin"
+        android:id="@+id/frag_set_sms_template_sms_templates"
+        android:layout_below="@id/frag_modify_sms_template_rl1"
+        android:padding="@dimen/inter_view_small_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag_set_sms_template_sms_template"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/black"
+            android:gravity="left"
+            android:text="sjdhaksdhkjshadkhsajkhdkjsahdkjhsakjhdkhaskdhjasdhjsakdjshakdjajsdhkjashdjsahkdhjakhdkjhsakdhssashdjkashdkjahskjdhakjshdkahsjk"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_modify_sms_template_ok"
+        android:theme="@style/MyRaisedButtons"
+        android:textColor="@color/white"
+        android:layout_below="@id/frag_set_sms_template_sms_templates"
+        android:layout_marginTop="@dimen/inter_view_small_margin"
+        android:layout_alignParentRight="true"
+        android:id="@+id/frag_modify_sms_template_ok"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_modify_sms_template_cancel"
+        android:theme="@style/MyRaisedButtons"
+        android:textColor="@color/white"
+        android:layout_alignTop="@id/frag_modify_sms_template_ok"
+        android:layout_toLeftOf="@id/frag_modify_sms_template_ok"
+        android:id="@+id/frag_modify_sms_template_cancel"/>
+
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/zero"
+    android:paddingLeft="@dimen/zero"
+    android:paddingRight="@dimen/zero"
+    android:paddingTop="@dimen/zero"
+    tools:context="cm.g2i.lalalaworker.ui.activities.SettingsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/small_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_settings_rl1"
+            android:padding="@dimen/small_padding"
+            android:background="@drawable/worker_infos_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_settings_user_settings_title"
+                android:text="@string/activity_settings_user_settings_title"
+                android:textSize="@dimen/text_small"
+                android:layout_centerHorizontal="true"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_settings_user_settings_title"
+                android:layout_marginTop="@dimen/inter_view_small_margin"
+                android:id="@+id/activity_settings_spinner_number_searched_wrks"
+                android:layout_alignParentRight="true">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/activity_settings_spinner_number_searched_wrks"
+                android:layout_toLeftOf="@id/activity_settings_spinner_number_searched_wrks"
+                android:layout_marginRight="@dimen/inter_view_small_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                android:text="@string/activity_settings_number_searched_wkrs"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_settings_switch_save_histories"
+                android:layout_below="@id/activity_settings_spinner_number_searched_wrks"
+                android:layout_marginTop="@dimen/inter_view_small_margin"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/activity_settings_switch_save_histories"
+                android:layout_toLeftOf="@id/activity_settings_switch_save_histories"
+                android:layout_marginRight="@dimen/inter_view_small_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                android:text="@string/activity_settings_save_histories"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_settings_switch_consider_user_locals"
+                android:layout_below="@id/activity_settings_switch_save_histories"
+                android:layout_marginTop="@dimen/inter_view_small_margin"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/activity_settings_switch_consider_user_locals"
+                android:layout_toLeftOf="@id/activity_settings_switch_consider_user_locals"
+                android:layout_marginRight="@dimen/inter_view_small_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                android:text="@string/activity_settings_consider_user_locals"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/activity_settings_rl1"
+            android:background="@drawable/worker_infos_bg"
+            android:padding="@dimen/small_padding"
+            android:layout_marginTop="@dimen/inter_view_big_margin">
+
+            <!-- Adresse serveur, taille police, notifications, SMS Template-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_settings_general_settings_title"
+                android:text="@string/activity_settings_general_settings_title"
+                android:textSize="@dimen/text_small"
+                android:layout_gravity="center_horizontal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_server_add_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/inter_view_small_margin"
+                    android:text="@string/activity_settings_server_add_label" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_modify_server_add"
+                    android:text="@string/frag_account_modify"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/ic_mode_edit_black_18dp"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:layout_alignBaseline="@id/activity_settings_server_add_label"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/activity_settings_modify_server_add"
+                    android:id="@+id/activity_settings_server_add"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="10.0.2.2"
+                    android:layout_toLeftOf="@id/activity_settings_modify_server_add"
+                    android:layout_toRightOf="@id/activity_settings_server_add_label"
+                    android:layout_marginLeft="@dimen/small_padding"
+                    android:layout_marginRight="@dimen/small_padding"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_police_size_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/activity_settings_police_size_label" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_police_size_spinner"
+                    android:layout_alignParentRight="true">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_notifications_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/activity_settings_notifications_label" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_notifications"
+                    android:layout_alignTop="@id/activity_settings_notifications_label"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_sms_template_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/inter_view_small_margin"
+                    android:text="@string/activity_settings_sms_template_label" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_modify_sms_template"
+                    android:text="@string/frag_account_modify"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/ic_mode_edit_black_18dp"
+                    android:drawablePadding="@dimen/small_padding"
+                    android:layout_alignBaseline="@id/activity_settings_sms_template_label"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/activity_settings_modify_sms_template"
+                    android:id="@+id/activity_settings_sms_template"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Template 1"
+                    android:layout_toLeftOf="@id/activity_settings_modify_sms_template"
+                    android:layout_toRightOf="@id/activity_settings_sms_template_label"
+                    android:layout_marginLeft="@dimen/small_padding"
+                    android:layout_marginRight="@dimen/small_padding"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_anonymous_signal_label"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_small"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/activity_settings_anonymous_signal_label" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_settings_anonymous_signal"
+                    android:layout_alignTop="@id/activity_settings_anonymous_signal_label"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

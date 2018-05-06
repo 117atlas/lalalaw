@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/simple_account"
+            android:icon="@drawable/ic_account_circle_white_48dp"
+            android:title="@string/nav_simple_profile" />
+
+        <item android:title="@string/nav_settings"
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_applications_black_48dp"/>
+
+        <item android:title="Others">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/share"
+                        android:icon="@drawable/ic_share_black_36dp"
+                        android:title="@string/nav_share_app"/>
+                    <item android:id="@+id/reportproblem"
+                        android:icon="@drawable/ic_report_problem_black_36dp"
+                        android:title="@string/nav_report_problem"/>
+                    <item android:id="@+id/help"
+                        android:icon="@drawable/ic_help_black_36dp"
+                        android:title="@string/nav_help"/>
+                    <item android:id="@+id/about"
+                        android:icon="@drawable/ic_info_black_36dp"
+                        android:title="@string/nav_about"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
